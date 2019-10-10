@@ -13,6 +13,12 @@
 		FAF3D1E3234E90C7002BF457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3D1E1234E90C7002BF457 /* Main.storyboard */; };
 		FAF3D1E5234E90CA002BF457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF3D1E4234E90CA002BF457 /* Assets.xcassets */; };
 		FAF3D1E8234E90CA002BF457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3D1E6234E90CA002BF457 /* LaunchScreen.storyboard */; };
+		FAF3D1F1234E91F7002BF457 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1F0234E91F7002BF457 /* Movie.swift */; };
+		FAF3D1F3234E932B002BF457 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1F2234E932B002BF457 /* Candy.swift */; };
+		FAF3D1F5234E9379002BF457 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1F4234E9379002BF457 /* Room.swift */; };
+		FAF3D1F7234E94D6002BF457 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1F6234E94D6002BF457 /* Purchase.swift */; };
+		FAF3D1F9234E9584002BF457 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1F8234E9584002BF457 /* Ticket.swift */; };
+		FAF3D1FB234EA3B4002BF457 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1FA234EA3B4002BF457 /* MoviesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		FAF3D1E4234E90CA002BF457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF3D1E7234E90CA002BF457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF3D1E9234E90CA002BF457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF3D1F0234E91F7002BF457 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FAF3D1F2234E932B002BF457 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		FAF3D1F4234E9379002BF457 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		FAF3D1F6234E94D6002BF457 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		FAF3D1F8234E9584002BF457 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		FAF3D1FA234EA3B4002BF457 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoviesTableViewController.swift; path = cinito/MoviesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		FAF3D1DA234E90C7002BF457 /* cinito */ = {
 			isa = PBXGroup;
 			children = (
+				FAF3D1FA234EA3B4002BF457 /* MoviesTableViewController.swift */,
+				FAF3D1EF234E9111002BF457 /* Models */,
 				FAF3D1DB234E90C7002BF457 /* AppDelegate.swift */,
 				FAF3D1DD234E90C7002BF457 /* SceneDelegate.swift */,
 				FAF3D1DF234E90C7002BF457 /* ViewController.swift */,
@@ -65,6 +79,18 @@
 				FAF3D1E9234E90CA002BF457 /* Info.plist */,
 			);
 			path = cinito;
+			sourceTree = "<group>";
+		};
+		FAF3D1EF234E9111002BF457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3D1F0234E91F7002BF457 /* Movie.swift */,
+				FAF3D1F2234E932B002BF457 /* Candy.swift */,
+				FAF3D1F4234E9379002BF457 /* Room.swift */,
+				FAF3D1F6234E94D6002BF457 /* Purchase.swift */,
+				FAF3D1F8234E9584002BF457 /* Ticket.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF3D1E0234E90C7002BF457 /* ViewController.swift in Sources */,
+				FAF3D1F3234E932B002BF457 /* Candy.swift in Sources */,
+				FAF3D1F5234E9379002BF457 /* Room.swift in Sources */,
+				FAF3D1F9234E9584002BF457 /* Ticket.swift in Sources */,
 				FAF3D1DC234E90C7002BF457 /* AppDelegate.swift in Sources */,
+				FAF3D1F1234E91F7002BF457 /* Movie.swift in Sources */,
+				FAF3D1FB234EA3B4002BF457 /* MoviesTableViewController.swift in Sources */,
 				FAF3D1DE234E90C7002BF457 /* SceneDelegate.swift in Sources */,
+				FAF3D1F7234E94D6002BF457 /* Purchase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

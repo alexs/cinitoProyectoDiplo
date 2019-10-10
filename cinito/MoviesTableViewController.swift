@@ -10,6 +10,9 @@ import UIKit
 
 class MoviesTableViewController: UITableViewController {
     var movies: [Movie]!
+    var rooms: [Room]!
+    var movie: Movie!
+    var schedules: [Room]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +49,23 @@ class MoviesTableViewController: UITableViewController {
     
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  /*  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        movie = movies[indexPath.row]
         print("select movie id \(movies[indexPath.row].id)")
+    }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        guard let destination = segue.destination as? PurchaseMovieViewController else
+       {
+          return
+       }
+        
+        let movie = movies[tableView.indexPathForSelectedRow!.row]
+        schedules = rooms.filter(){$0.movieId == movie.id}
+
+       destination.movie = movie
+       destination.schedules = schedules
     }
     
 

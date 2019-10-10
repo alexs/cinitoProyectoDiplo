@@ -63,6 +63,7 @@ class ViewController: UIViewController {
           return
        }
        destination.movies = movies
+       destination.rooms = rooms
     }
 }
 

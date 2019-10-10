@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAB1738C234EE48C000A2A23 /* PurchaseMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */; };
 		FAF3D1DC234E90C7002BF457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1DB234E90C7002BF457 /* AppDelegate.swift */; };
 		FAF3D1DE234E90C7002BF457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1DD234E90C7002BF457 /* SceneDelegate.swift */; };
 		FAF3D1E0234E90C7002BF457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3D1DF234E90C7002BF457 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseMovieViewController.swift; sourceTree = "<group>"; };
 		FAF3D1D8234E90C7002BF457 /* cinito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cinito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3D1DB234E90C7002BF457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF3D1DD234E90C7002BF457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				FAF3D1E4234E90CA002BF457 /* Assets.xcassets */,
 				FAF3D1E6234E90CA002BF457 /* LaunchScreen.storyboard */,
 				FAF3D1E9234E90CA002BF457 /* Info.plist */,
+				FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */,
 			);
 			path = cinito;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				FAF3D1F1234E91F7002BF457 /* Movie.swift in Sources */,
 				FAF3D1FB234EA3B4002BF457 /* MoviesTableViewController.swift in Sources */,
 				FAF3D1DE234E90C7002BF457 /* SceneDelegate.swift in Sources */,
+				FAB1738C234EE48C000A2A23 /* PurchaseMovieViewController.swift in Sources */,
 				FAF3D1F7234E94D6002BF457 /* Purchase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

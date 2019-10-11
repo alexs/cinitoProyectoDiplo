@@ -18,6 +18,8 @@ class PurchaseMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("compra total \(currentCompra.total)")
+        
         if(movie != nil){
             poster.image = movie.poster
             movieTitle.text = movie.title
@@ -32,6 +34,7 @@ class PurchaseMovieViewController: UIViewController {
         var buttonY = 330
         
         let i = 55
+        var pos = 0
         for item in schedules{
             buttonY = buttonY + i
             let button = UIButton(type: .system)
@@ -40,6 +43,7 @@ class PurchaseMovieViewController: UIViewController {
             formatter.dateFormat = "dd-MMM - HH:mm"
 
             let dateString = formatter.string(from: item.datetime)
+            button.tag = pos
             button.setTitle(dateString as String, for: .normal)
             button.tintColor = .white
             button.backgroundColor = .red
@@ -47,18 +51,22 @@ class PurchaseMovieViewController: UIViewController {
                
             button.frame = CGRect(x: buttonX, y: buttonY, width: buttonWidth, height: buttonHeight)
                
+            pos = pos + 1
             self.view.addSubview(button)
         }
+        
         // Do any additional setup after loading the view.
     }
     
     @objc func buttonClicked(sender : UIButton){
-    let alert = UIAlertController(title: "Clicked", message: "You have clicked on the button", preferredStyle: .alert)
-    
-    self.present(alert, animated: true, completion: nil)
-
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BuyTicket") as? BuyTicketViewController
+        {
+            vc.room = schedules[sender.tag]
+            present(vc, animated: true, completion: nil)
+        }
     }
-
+    
     /*
     // MARK: - Navigation
 

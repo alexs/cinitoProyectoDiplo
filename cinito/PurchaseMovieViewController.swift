@@ -17,15 +17,10 @@ class PurchaseMovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("compra total \(currentCompra.total)")
-        
+                
         if(movie != nil){
             poster.image = movie.poster
             movieTitle.text = movie.title
-        }
-        if (schedules != nil){
-            print(schedules.count)
         }
         
         let buttonX = 10
@@ -44,9 +39,7 @@ class PurchaseMovieViewController: UIViewController {
 
             let dateString = formatter.string(from: item.datetime)
             let buttonLabel = "Sala \(pos + 1): \(dateString as String) Disponible \(item.maxCapacity) lugares"
-            
-            print(item.datetime)
-            
+                        
             button.tag = pos
             button.setTitle(buttonLabel, for: .normal)
             button.tintColor = .white

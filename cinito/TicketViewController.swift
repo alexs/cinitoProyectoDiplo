@@ -18,7 +18,7 @@ class TicketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        adultTicket.text = "Boletos Adulto: \(ConfirmedBuy.totalAdultTickets)"
+        adultTicket.text = "Boletos Adulto: \(ConfirmedBuy.totalAdultTickets!)"
 
         // Do any additional setup after loading the view.
     }

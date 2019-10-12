@@ -24,20 +24,17 @@
                                     <segue destination="lkc-mn-nIG" kind="showDetail" identifier="moviesSegue" id="YBa-GU-nCj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.up.bin" catalog="system" highlightedImage="arrow.up.bin.fill" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-x5-rGL">
-                                <rect key="frame" x="191" y="245" width="175" height="137"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pN-8q-5g1">
+                                <rect key="frame" x="199" y="244" width="174" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dulceria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-yg-w75">
-                                <rect key="frame" x="203" y="440" width="63" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Dulceria" backgroundImage="arrow.up.bin" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" label="Dulceria"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vkv-LW-ONG"/>
@@ -241,7 +238,6 @@
     </scenes>
     <resources>
         <image name="arrow.up.bin" catalog="system" width="64" height="46"/>
-        <image name="arrow.up.bin.fill" catalog="system" width="64" height="48"/>
         <image name="movie1" width="140" height="209"/>
         <image name="tv" catalog="system" width="64" height="46"/>
     </resources>

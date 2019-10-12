@@ -43,6 +43,9 @@ class PurchaseMovieViewController: UIViewController {
             formatter.dateFormat = "dd-MMM - HH:mm"
 
             let dateString = formatter.string(from: item.datetime)
+            
+            print(item.datetime)
+            
             button.tag = pos
             button.setTitle(dateString as String, for: .normal)
             button.tintColor = .white

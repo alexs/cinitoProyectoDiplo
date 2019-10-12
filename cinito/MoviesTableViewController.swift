@@ -10,7 +10,7 @@ import UIKit
 
 class MoviesTableViewController: UITableViewController {
     var movies: [Movie]!
-    var rooms: [Room]!
+    var rooms: [Room]! = Compra.rooms
     var movie: Movie!
     var schedules: [Room]!
 

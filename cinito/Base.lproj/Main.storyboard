@@ -31,6 +31,9 @@
                                 <state key="normal" title="Dulceria" backgroundImage="arrow.up.bin" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Z4i-3U-qwZ" kind="show" id="dOs-cn-Sa4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -41,7 +44,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086.9565217391305" y="511.60714285714283"/>
+            <point key="canvasLocation" x="2087" y="521"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="g5q-6B-hMT">
+            <objects>
+                <tableViewController id="Z4i-3U-qwZ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kys-pr-MUl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iRH-UL-cMR">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iRH-UL-cMR" id="2e2-AR-sHV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z4i-3U-qwZ" id="gqM-yc-5eb"/>
+                            <outlet property="delegate" destination="Z4i-3U-qwZ" id="MHE-k2-5WS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jPF-dZ-Wbz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tx-Ad-xfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087" y="1265"/>
         </scene>
         <!--Movies Table View Controller-->
         <scene sceneID="QeM-ft-dKr">
@@ -226,7 +258,9 @@
                         <viewLayoutGuide key="safeArea" id="tke-al-wBX"/>
                     </view>
                     <connections>
+                        <outlet property="adultTickets" destination="FIh-mf-D5f" id="m14-7Z-TXI"/>
                         <outlet property="amount" destination="Cfe-Xk-Kfr" id="S6u-2F-hBR"/>
+                        <outlet property="chidlTicket" destination="9RC-7j-Ew1" id="skU-BH-lO3"/>
                         <outlet property="childTickets" destination="GT3-wT-2OX" id="BeW-dG-Aw0"/>
                         <outlet property="horario" destination="bQa-pV-Ltr" id="0fV-8D-7qP"/>
                     </connections>

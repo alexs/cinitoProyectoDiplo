@@ -14,7 +14,9 @@ class BuyTicketViewController: UIViewController {
 
     @IBOutlet weak var horario: UILabel!
     
-
+    @IBOutlet weak var chidlTicket: UIStepper!
+    
+    @IBOutlet weak var adultTickets: UIStepper!
     @IBOutlet weak var childTickets: UILabel!
     @IBOutlet weak var amount: UILabel!
     override func viewDidLoad() {
@@ -39,7 +41,19 @@ class BuyTicketViewController: UIViewController {
     }
     
     @IBAction func buyTickets(_ sender: Any) {
-        print(Carrito.getTotal)
+        var total_tickets: Int = Int(adultTickets.value + chidlTicket.value)
+        for item in Compra.rooms{
+            if(item.id == room.id){
+                if(item.maxCapacity > total_tickets){
+                    print("si hay lugar")
+                }
+                else{
+                    print("no hay lugar")
+                }
+            }
+        }
+//        if(Compra.rooms[]
+        print(adultTickets.value + chidlTicket.value)
     }
     
     /*

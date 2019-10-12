@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initializeData()
         print(rooms.count)
+        Compra.rooms = rooms
     }
     
     func initializeData(){
@@ -63,7 +64,6 @@ class ViewController: UIViewController {
           return
        }
        destination.movies = movies
-       destination.rooms = rooms
     }
 }
 

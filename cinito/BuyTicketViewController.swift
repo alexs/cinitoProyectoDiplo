@@ -11,7 +11,11 @@ import UIKit
 class BuyTicketViewController: UIViewController {
     
     var room: Room!
+    let ticketAdultPrice: Int = 80
+    let ticketChildPrice: Int = 40
+    var total: Int = 0
 
+    @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var horario: UILabel!
     
     @IBOutlet weak var chidlTicket: UIStepper!
@@ -34,27 +38,48 @@ class BuyTicketViewController: UIViewController {
     
     @IBAction func ticketStepper(_ sender: UIStepper) {
         amount.text = Int(sender.value).description
+        updateTotalPrice()
     }
     
     @IBAction func childTicketStepper(_ sender: UIStepper) {
         childTickets.text = Int(sender.value).description
+        updateTotalPrice()
     }
     
     @IBAction func buyTickets(_ sender: Any) {
         var total_tickets: Int = Int(adultTickets.value + chidlTicket.value)
+       
+        var pos = 0
         for item in Compra.rooms{
             if(item.id == room.id){
                 if(item.maxCapacity > total_tickets){
-                    print("si hay lugar")
+                    Compra.rooms[pos].maxCapacity = item.maxCapacity - total_tickets
+                    ConfirmedBuy.id = 1
+                    ConfirmedBuy.room = room
+                    ConfirmedBuy.totalAdultTickets = Int(adultTickets.value)
+                    ConfirmedBuy.totalChildTickets = Int(chidlTicket.value)
+                    ConfirmedBuy.ticketsTotalPrice = total
+                    self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
                 }
                 else{
-                    print("no hay lugar")
+                    let alert = UIAlertController(title: "No hay lugares", message: "Elige menos lugares solo quedan \(Compra.rooms[pos].maxCapacity)", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
             }
+            pos = pos + 1
         }
 //        if(Compra.rooms[]
-        print(adultTickets.value + chidlTicket.value)
     }
+    
+    func updateTotalPrice(){
+        var totalPriceAdult = ticketAdultPrice * Int(adultTickets.value)
+        var totalPriceChild = ticketChildPrice * Int(chidlTicket.value)
+        total = totalPriceAdult + totalPriceChild
+        totalLabel.text = "Total: \(total) pesos"
+    }
+    
+
     
     /*
     // MARK: - Navigation

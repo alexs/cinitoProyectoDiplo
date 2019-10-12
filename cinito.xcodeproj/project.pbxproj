@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5B596D23517F530057E184 /* ConfirmedBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B596C23517F530057E184 /* ConfirmedBuy.swift */; };
+		FA5B596F235182400057E184 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B596E235182400057E184 /* TicketViewController.swift */; };
 		FAB1738C234EE48C000A2A23 /* PurchaseMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */; };
 		FAB1738E234EFD7B000A2A23 /* Compra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1738D234EFD7B000A2A23 /* Compra.swift */; };
 		FAB1739223510D5B000A2A23 /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1739123510D5B000A2A23 /* BuyTicketViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA5B596C23517F530057E184 /* ConfirmedBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedBuy.swift; sourceTree = "<group>"; };
+		FA5B596E235182400057E184 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseMovieViewController.swift; sourceTree = "<group>"; };
 		FAB1738D234EFD7B000A2A23 /* Compra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compra.swift; sourceTree = "<group>"; };
 		FAB1739123510D5B000A2A23 /* BuyTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				FAB1738B234EE48C000A2A23 /* PurchaseMovieViewController.swift */,
 				FAB1739123510D5B000A2A23 /* BuyTicketViewController.swift */,
 				FAB1739323511C9E000A2A23 /* Carrito.swift */,
+				FA5B596E235182400057E184 /* TicketViewController.swift */,
 			);
 			path = cinito;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 				FAF3D1F6234E94D6002BF457 /* Purchase.swift */,
 				FAF3D1F8234E9584002BF457 /* Ticket.swift */,
 				FAB1738D234EFD7B000A2A23 /* Compra.swift */,
+				FA5B596C23517F530057E184 /* ConfirmedBuy.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,12 +186,14 @@
 				FAF3D1F3234E932B002BF457 /* Candy.swift in Sources */,
 				FAF3D1F5234E9379002BF457 /* Room.swift in Sources */,
 				FAF3D1F9234E9584002BF457 /* Ticket.swift in Sources */,
+				FA5B596D23517F530057E184 /* ConfirmedBuy.swift in Sources */,
 				FAF3D1DC234E90C7002BF457 /* AppDelegate.swift in Sources */,
 				FAF3D1F1234E91F7002BF457 /* Movie.swift in Sources */,
 				FAF3D1FB234EA3B4002BF457 /* MoviesTableViewController.swift in Sources */,
 				FAB1738E234EFD7B000A2A23 /* Compra.swift in Sources */,
 				FAF3D1DE234E90C7002BF457 /* SceneDelegate.swift in Sources */,
 				FAB1739423511C9E000A2A23 /* Carrito.swift in Sources */,
+				FA5B596F235182400057E184 /* TicketViewController.swift in Sources */,
 				FAB1738C234EE48C000A2A23 /* PurchaseMovieViewController.swift in Sources */,
 				FAF3D1F7234E94D6002BF457 /* Purchase.swift in Sources */,
 				FAB1739223510D5B000A2A23 /* BuyTicketViewController.swift in Sources */,

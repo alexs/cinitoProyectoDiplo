@@ -28,8 +28,8 @@ class PurchaseMovieViewController: UIViewController {
             print(schedules.count)
         }
         
-        let buttonX = 70
-        let buttonWidth = 300
+        let buttonX = 10
+        let buttonWidth = 400
         let buttonHeight = 50
         var buttonY = 330
         
@@ -43,11 +43,12 @@ class PurchaseMovieViewController: UIViewController {
             formatter.dateFormat = "dd-MMM - HH:mm"
 
             let dateString = formatter.string(from: item.datetime)
+            let buttonLabel = "Sala \(pos + 1): \(dateString as String) Disponible \(item.maxCapacity) lugares"
             
             print(item.datetime)
             
             button.tag = pos
-            button.setTitle(dateString as String, for: .normal)
+            button.setTitle(buttonLabel, for: .normal)
             button.tintColor = .white
             button.backgroundColor = .red
             button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)

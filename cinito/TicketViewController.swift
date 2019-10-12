@@ -19,7 +19,10 @@ class TicketViewController: UIViewController {
         super.viewDidLoad()
         
         adultTicket.text = "Boletos Adulto: \(ConfirmedBuy.totalAdultTickets!)"
+        childTickets.text = "Boletos Niño: \(ConfirmedBuy.totalChildTickets!)"
+        subTotalTickets.text = "Subtotal de Tickets: \(ConfirmedBuy.ticketsTotalPrice!)"
 
+        total.text = "Total \(ConfirmedBuy.ticketsTotalPrice!)"
         // Do any additional setup after loading the view.
     }
     
